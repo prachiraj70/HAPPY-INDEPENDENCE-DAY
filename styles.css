@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #87CEEB; /* Light sky blue background */
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    padding-top: 50px;
+}
+
+.title {
+    font-size: 3rem;
+    color: #fff;
+    opacity: 0;
+    animation: colorChange 5s infinite;
+    margin-bottom: 80px; /* 80px gap between title and flag */
+}
+
+@keyframes colorChange {
+    0% { color: #fff; }
+    25% { color: #ff9933; }
+    50% { color: #138808; }
+    75% { color: #ffffff; }
+    100% { color: #ff9933; }
+}
+
+.flag-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px; /* Gap between flag and button */
+}
+
+.flag {
+    width: 195px; /* Increased size to 30% larger */
+    height: 130px; /* Increased size to 30% larger */
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    transform-origin: left center;
+    margin: 0 auto; /* Center the flag */
+}
+
+.stripe {
+    height: 33%;
+    width: 100%;
+}
+
+.orange {
+    background-color: #ff9933; /* Top stripe color */
+}
+
+.white {
+    background-color: #ffffff; /* Middle stripe color */
+}
+
+.green {
+    background-color: #138808; /* Bottom stripe color */
+}
+
+.flag-stick {
+    width: 10px;
+    height: 300px;
+    background-color: #8B4513; /* Brown color for the stick */
+    position: absolute;
+    left: -10px; /* Positioning the stick to the left of the flag */
+    top: 0;
+}
+
+button {
+    margin-top: 10px; /* Positioned just below the flag */
+    padding: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ff6f61, #ffcc00); /* Initial gradient background */
+    color: black;
+    border: none;
+    border-radius: 50%; /* Circular button */
+    width: 90px; /* Size of the circular button */
+    height: 90px; /* Size of the circular button */
+    transition: background 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+button:hover {
+    background: linear-gradient(45deg, #00bcd4, #4caf50); /* Gradient on hover */
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+
+
+@keyframes wave {
+    0% { transform: translateX(0) rotate(0deg); }
+    25% { transform: translateX(-5px) rotate(-2deg); }
+    50% { transform: translateX(0) rotate(0deg); }
+    75% { transform: translateX(5px) rotate(2deg); }
+    100% { transform: translateX(0) rotate(0deg); }
+}
+
+.waving {
+    animation: wave 2s ease-in-out infinite;
+}
+
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #ff0; /* Yellow particles */
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+#waveButton{
+    position: absolute;
+    top: 550px;
+}
+
+/* Existing styles here... */
+
+@media (max-width: 425px) {
+    .title {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+        margin-bottom: 60px; /* Increase gap between title and flag */
+        max-width: 90%; /* Prevent overflow */
+        margin: 30px; /* Center title */
+    }
+
+    .flag {
+        width: 120px; /* Adjusted size for smaller screens */
+        height: 80px; /* Adjusted size for smaller screens */
+        
+    }
+
+    .flag-stick {
+        width: 6px; /* Adjusted size for smaller screens */
+        height: 180px; /* Adjusted size for smaller screens */
+        left: -6px; /* Positioning the stick to the left of the flag */
+    }
+
+    button {
+        width: 50px; /* Adjusted size for smaller screens */
+        height: 50px; /* Adjusted size for smaller screens */
+        padding: 8px; /* Adjusted padding */
+        font-size: 0.9rem; /* Adjusted font size */
+        margin-bottom: 50px; /* Positioned just below the flag */
+    }
+
+    .container {
+       display: grid;
+       place-items: center;
+    
+    }
+}
+
