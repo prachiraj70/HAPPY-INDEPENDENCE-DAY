@@ -120,30 +120,30 @@ button:hover {
 
 @media (max-width: 425px) {
     .title {
-        font-size: 1.5rem; /* Adjust font size for smaller screens */
+        font-size: 2rem; /* Adjust font size for smaller screens */
         margin-bottom: 60px; /* Increase gap between title and flag */
         max-width: 90%; /* Prevent overflow */
         margin: 30px; /* Center title */
     }
 
     .flag {
-        width: 120px; /* Adjusted size for smaller screens */
-        height: 80px; /* Adjusted size for smaller screens */
+        width: 200px; /* Adjusted size for smaller screens */
+        height: 160px; /* Adjusted size for smaller screens */
         
     }
 
     .flag-stick {
         width: 6px; /* Adjusted size for smaller screens */
-        height: 180px; /* Adjusted size for smaller screens */
+        height: 350px; /* Adjusted size for smaller screens */
         left: -6px; /* Positioning the stick to the left of the flag */
     }
 
     button {
-        width: 50px; /* Adjusted size for smaller screens */
-        height: 50px; /* Adjusted size for smaller screens */
+        width: 100px; /* Adjusted size for smaller screens */
+        height: 100px; /* Adjusted size for smaller screens */
         padding: 8px; /* Adjusted padding */
         font-size: 0.9rem; /* Adjusted font size */
-        margin-bottom: 50px; /* Positioned just below the flag */
+        margin-bottom: 0px; /* Positioned just below the flag */
     }
 
     .container {
